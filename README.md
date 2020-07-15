@@ -10,6 +10,7 @@ Hyper Comment is a small code snippets to hypercharge Visual Studio Code when wr
 ## Features
 
 - **Snippets**, just type `comment` on the supported languages and press `Enter` or `Tab` and this snippet
+- **Conditional Commets**, you can add conditional comment by typing `if-comment`
 will automatically create a leveled HTML comment.
 - **Code surround-with**, you can highlight a block of text in the supported languages and press `Ctrl+Shift+,` to surround it with a leveled HTML comment.
 

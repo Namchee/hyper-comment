@@ -3,5 +3,10 @@
         "prefix": "comment",
         "body": ["<!-- ${1:start}: ${3} -->", "${TM_SELECTED_TEXT}${0}", "<!-- ${2:end}: ${3} -->"],
         "description": "Insert one level of HTML comment"
+    },
+    "if-comment": {
+        "prefix": "if-comment",
+        "body": ["<!-- [if ${1}]>", "${TM_SELECTED_TEXT}${0}", "<![endif]-->"],
+        "description": "Insert one level of conditional HTML comment"
     }
 }
