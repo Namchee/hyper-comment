@@ -2,6 +2,7 @@
 	"name": "hyper-comment",
 	"displayName": "hyper-comment",
 	"description": "Small code snippets to hypercharge your HTML comments",
+	"publisher": "Namchee",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.47.0"
@@ -33,6 +34,10 @@
 				}
 			}
 		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Namchee/hyper-comment"
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
