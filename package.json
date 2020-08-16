@@ -2,7 +2,7 @@
 	"name": "hyper-comment",
 	"displayName": "hyper-comment",
 	"description": "Small code snippets to hypercharge your HTML comments",
-	"publisher": "Namchee12",
+	"publisher": "6C",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.47.0"
