@@ -12,11 +12,9 @@ jobs:
     steps:
       - name: Connect GitHub workflows with repository
         uses: actions/checkout@v2
-      - name: Use NodeJS 12.16
-        uses: actions/setup-node@v1
+      - name: Publish extensions to Visual Studio Marketplace
+        uses: lannonbr/vsce-action@master
         with:
-          node-version: 12.16
-      - name: Install vsce
-        run: npm ci
-      - name: Publish extension to Visual Studio marketplace
-        run: npx vsce publish -p ${{ secrets.AZURE_TOKEN }}
+          args: "publish -p $AZURE_TOKEN"
+        env:
+          AZURE_TOKEN: ${{ secrets.AZURE_TOKEN }}
