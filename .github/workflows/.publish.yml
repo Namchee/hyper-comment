@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Connect GitHub workflows with repository
         uses: actions/checkout@v2
+      - name: Use NodeJS 12.16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.16
       - name: Install vsce
         run: npm ci
       - name: Publish extension to Visual Studio marketplace
