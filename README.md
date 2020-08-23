@@ -2,6 +2,8 @@
 
 Hyper Comment is a small code snippets to hypercharge Visual Studio Code when writing HTML comment.
 
+![assets/demo.gif](Demo)
+
 ## Language Support
 
 - Normal HTML file (`*.html`)

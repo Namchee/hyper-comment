@@ -1,0 +1,18 @@
+name: Publish extension to marketplace
+
+on:
+  push:
+    branches:
+      - master
+    tags: ["v*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connect GitHub workflows with repository
+        uses: actions/checkout@v2
+      - name: Install vsce
+        run: npm ci
+      - name: Publish extension to Visual Studio marketplace
+        run: npx vsce publish -p ${{ secrets.AZURE_TOKEN }}

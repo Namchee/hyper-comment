@@ -3,7 +3,7 @@
 	"displayName": "hyper-comment",
 	"description": "Small code snippets to hypercharge your HTML comments",
 	"publisher": "6C",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
@@ -27,7 +27,10 @@
 				"command": "editor.action.insertSnippet",
 				"when": "editorHasSelection",
 				"args": {
-					"langId": ["html", "vue-html"],
+					"langId": [
+						"html",
+						"vue-html"
+					],
 					"name": "comment"
 				}
 			}
@@ -36,5 +39,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Namchee/hyper-comment"
+	},
+	"devDependencies": {
+		"vsce": "^1.78.0"
 	}
 }
